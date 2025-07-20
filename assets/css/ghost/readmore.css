@@ -3,7 +3,6 @@
 
 .gh-readmore {
     padding: 8vmin 4vmin;
-    font-size: 2.6rem;
 }
 
 .gh-readmore-inner {
@@ -25,7 +24,6 @@
 
 .gh-readmore h4 {
     width: 100%;
-    font-size: inherit;
 }
 
 .gh-readmore svg {
@@ -41,9 +39,6 @@
 }
 
 @media (max-width: 700px) {
-    .gh-readmore {
-        font-size: 1.6rem;
-    }
     .gh-readmore svg {
         margin: 0.1em 0 0;
     }

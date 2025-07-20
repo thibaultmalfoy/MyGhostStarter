@@ -16,15 +16,12 @@
 
 .gh-error-code {
     margin: 0;
-    font-size: 14vmin;
 }
 
 .gh-error-description {
     max-width: 600px;
     margin: 0 auto;
     padding: 0 2rem;
-    font-size: 4vmin;
-    line-height: 1.2em;
     font-weight: 300;
     opacity: 0.6;
 }
@@ -32,7 +29,6 @@
 .gh-error-link {
     display: block;
     margin-top: 4vmin;
-    font-size: 1.6rem;
 }
 
 .gh-error-stack {
@@ -44,7 +40,6 @@
 
 .gh-error-stack-list {
     margin: 4vmin 0 0;
-    font-size: 1.4rem;
 }
 
 .gh-error-stack-list > li {
@@ -55,6 +50,5 @@
 
 .gh-error-stack-function {
     margin: 0 0 0.5em;
-    font-size: 1.8rem;
     color: red;
 }

@@ -20,6 +20,16 @@
     --font-bold: 700;
     --font-heavy: 800;
 
+    /* Fluid type scale thanks to Utopia: https://utopia.fyi/type/calculator?c=320,18,1.2,1280,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+    --type--2: clamp(0.7813rem, 0.775rem + 0.0313vw, 0.8rem);
+    --type--1: clamp(0.9375rem, 0.9167rem + 0.1042vw, 1rem);
+    --type-0: clamp(1.125rem, 1.0833rem + 0.2083vw, 1.25rem);
+    --type-1: clamp(1.35rem, 1.2792rem + 0.3542vw, 1.5625rem);
+    --type-2: clamp(1.62rem, 1.509rem + 0.5552vw, 1.9531rem);
+    --type-3: clamp(1.944rem, 1.7782rem + 0.829vw, 2.4414rem);
+    --type-4: clamp(2.3328rem, 2.0931rem + 1.1983vw, 3.0518rem);
+    --type-5: clamp(2.7994rem, 2.4609rem + 1.6922vw, 3.8147rem);
+
     /* Breakpoints */
     --xlarge: 1680px;
     --large: 1280px;

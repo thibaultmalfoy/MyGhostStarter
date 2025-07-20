@@ -64,8 +64,6 @@
 .gh-canvas > p {
     font-family: var(--font-serif);
     font-weight: 400;
-    font-size: 2rem;
-    line-height: 1.6em;
 }
 
 .gh-content > ul,
@@ -98,14 +96,6 @@
 }
 
 @media (max-width: 650px) {
-    .gh-canvas blockquote,
-    .gh-canvas ol,
-    .gh-canvas ul,
-    .gh-canvas dl,
-    .gh-canvas p {
-        font-size: 1.8rem;
-    }
-
     .gh-content blockquote::before {
         left: -4vmin;
     }
@@ -128,8 +118,6 @@ figcaption {
     text-align: center;
     color: rgba(0,0,0,0.5);
     font-weight: 600;
-    font-size: 1.3rem;
-    line-height: 1.4em;
 }
 
 figcaption strong {
@@ -141,8 +129,6 @@ figcaption strong {
     padding: 0.15em 0.4em 0.15em;
     border: #e1eaef 1px solid;
     font-weight: 400 !important;
-    font-size: 0.9em;
-    line-height: 1em;
     color: #dc0050;
     background: #f0f6f9;
     border-radius: 0.25em;
@@ -206,7 +192,6 @@ figcaption strong {
 .gh-content th {
     padding: 0.5em 0.8em;
     text-align: left;
-    font-size: .75em;
     text-transform: uppercase;
 }
 
