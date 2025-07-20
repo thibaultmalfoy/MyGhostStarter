@@ -61,11 +61,10 @@ p, li {
 
 /* Better default hr */
 hr {
-  border-style: solid;
-  border-width: 1px 0 0;
+  border: 0;
+  border-top: 1px solid inherit;
   color: inherit;
-  height: 0;
-  overflow: visible;
+  width: 100%;
 }
 
 /* A elements that don't have a class get default styles */
