@@ -9,5 +9,24 @@
 } 
 
 .stack > * + * {
-  margin-block-start: var(--space, 1lh);
+  --space: var(--space-m);
+  margin-block-start: var(--space, 1.5rem);
+}
+
+.stack > :not([id]) + .kg-card, .stack > .kg-card + :not([id]),
+.stack > hr, .stack > hr + :not([id]) {
+  --space: var(--space-l);
+}
+
+/* Hard reset of a rule in cards.min.css automatically injected by Ghost at the very end of the header  */
+.stack > .kg-callout-card + .kg-callout-card {
+  margin-block-start: var(--space-m);
+}
+
+.stack > h2 {
+  --space: var(--space-xl);
+}
+
+.stack > h3 {
+  --space: var(--space-l);
 }
