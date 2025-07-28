@@ -1,3 +1,5 @@
+/* Based on Every Layout stack: https://every-layout.dev/layouts/stack/ */
+
 .stack {
   display: flex;
   flex-direction: column;

@@ -8,15 +8,21 @@ production stylesheet in assets/built/screen.css using: npm run dev
 /* Lib - Local component imports
 /* ---------------------------------------------------------- */
 
-/* Base components */
-@import "reset.css";
-@import "vars.css";
-@import "utilities/stack.css";
+/* Using CUBE CSS methodology: https://cube.fyi */
 
+/* Global styles */
+@import "global/reset.css";
+@import "global/vars.css";
+
+/* Compositions */
+@import "compositions/stack.css";
+
+/* Utilities */
+/* Blocks */
+
+/* To do… components become blocks, etc. */
 @import "components/forms.css";
 @import "components/buttons.css";
-
-/* Ghost components */
 @import "ghost/header.css";
 @import "ghost/content.css";
 @import "ghost/readmore.css";
@@ -31,33 +37,6 @@ production stylesheet in assets/built/screen.css using: npm run dev
 
 /* Main - Your styles here! Edit below
 /* ---------------------------------------------------------- */
-
-body {
-    font-size: var(--type-0);
-}
-
-h1 {
-    font-size: var(--type-3);
-}
-
-h2 {
-    font-size: var(--type-2);
-}
-
-h3 {
-    font-size: var(--type-1);
-}
-
-h4 {
-    font-size: var(--type-0);
-}
-
-figcaption {
-    font-size: var(--type--1);
-    margin-block-start: var(--space-2xs);
-    padding: 0 var(--space-s);
-    text-wrap: balance;
-}
 
 html,
 .gh-viewport {

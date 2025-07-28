@@ -1,0 +1,33 @@
+/* 
+  Global styles 
+
+  Low-specificity, global styles that apply to the whole 
+  project: https://cube.fyi/css.html
+*/
+
+body {
+    font-size: var(--type-0);
+}
+
+h1 {
+    font-size: var(--type-3);
+}
+
+h2 {
+    font-size: var(--type-2);
+}
+
+h3 {
+    font-size: var(--type-1);
+}
+
+h4 {
+    font-size: var(--type-0);
+}
+
+figcaption {
+    font-size: var(--type--1);
+    margin-block-start: var(--space-2xs);
+    padding: 0 var(--space-s);
+    text-wrap: balance;
+}
