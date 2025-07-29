@@ -1,0 +1,21 @@
+.site-header {
+  --wrapper-max-width: 1280px;
+  
+  font-size: var(--type--1);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-flat);
+  padding-block-start: var(--space-m);
+}
+
+.site-header .repel {
+  --gutter: var(--space-m);
+}
+
+.site-header__brand {
+  flex-basis: content;
+  flex-grow: 1;
+}
+
+.site-header__brand a:not(:hover) {
+  text-decoration: none;
+}

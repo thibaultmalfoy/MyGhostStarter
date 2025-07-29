@@ -17,7 +17,7 @@ html {
 
 /* Remove default margin in favour of better control in authored CSS */
 body, h1, h2, h3, h4, hr, p,
-figure, blockquote, dl, dd {
+figure, blockquote, dl, dd, ol, ul {
   margin-block: 0;
 }
 
@@ -29,6 +29,7 @@ blockquote, figure {
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
+  padding-inline-start: 0;
 }
 
 /* Set core body defaults */

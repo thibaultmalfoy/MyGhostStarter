@@ -1,0 +1,9 @@
+<nav {{#if isSecondary}}aria-label="secondary"{{else}}aria-label="primary"{{/if}} class="nav">
+    <ul class="cluster" role="list">
+        {{#foreach navigation}}
+            <li class="{{link_class for=(url) class=(concat "nav-" slug)}}">
+                <a href="{{url absolute="true"}}" {{#if current}}aria-current="page"{{/if}}>{{label}}</a>
+            </li>
+        {{/foreach}}
+    </ul>
+</nav>

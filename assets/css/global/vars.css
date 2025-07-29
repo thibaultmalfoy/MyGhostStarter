@@ -20,6 +20,15 @@
     --font-bold: 700;
     --font-heavy: 800;
 
+    /* Leading */
+    --leading-flat: 1;
+    --leading-fine: 1.2;
+    --leading-standard: 1.4;
+    --leading-loose: 1.7;
+
+    --gutter: var(--space-m);
+    --uppercase-kerning: 0.04ch;
+
     /* Fluid type scale thanks to Utopia: https://utopia.fyi/type/calculator?c=320,18,1.2,1280,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
     --type--2: clamp(0.7813rem, 0.775rem + 0.0313vw, 0.8rem);
     --type--1: clamp(0.9375rem, 0.9167rem + 0.1042vw, 1rem);
