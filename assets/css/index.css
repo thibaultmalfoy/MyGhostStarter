@@ -25,6 +25,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 
 /* Blocks */
 @import "blocks/site-header.css";
+@import "blocks/site-footer.css";
 
 /* To do… components become blocks, etc. */
 @import "components/forms.css";
@@ -33,7 +34,6 @@ production stylesheet in assets/built/screen.css using: npm run dev
 @import "ghost/readmore.css";
 @import "ghost/members.css";
 @import "ghost/errors.css";
-@import "ghost/footer.css";
 @import "ghost/badge.css";
 @import "ghost/pagination.css";
 @import "ghost/comments.css";
@@ -82,25 +82,6 @@ html,
     margin: 0 auto;
 }
 
-.gh-head-actions a:not(.gh-button) {
-    display: inline-flex;
-    align-items: center;
-    margin: 0;
-    padding: 10px;
-}
-
-.gh-head-actions a svg {
-    height: 1.8rem;
-    fill: currentcolor;
-}
-
-.gh-head-actions a:first-child svg {
-    margin-left: 20px;
-}
-
-.gh-head-actions a:last-child svg {
-    height: 2rem;
-}
 
 /* Index
 /* ---------------------------------------------------------- */
