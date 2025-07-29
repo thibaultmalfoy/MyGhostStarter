@@ -8,7 +8,7 @@
 }
 
 .site-header .repel {
-  --gutter: var(--space-m);
+  --gutter: var(--space-l);
 }
 
 .site-header__brand {
@@ -16,6 +16,14 @@
   flex-grow: 1;
 }
 
-.site-header__brand a:not(:hover) {
+.site-header a:not(:hover) {
   text-decoration: none;
+}
+
+.site-header a.signin {
+  color: var(--color-primary);
+}
+
+.site-header__actions {
+  --gutter: var(--space-s);
 }
