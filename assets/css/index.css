@@ -26,10 +26,10 @@ production stylesheet in assets/built/screen.css using: npm run dev
 /* Blocks */
 @import "blocks/site-header.css";
 @import "blocks/site-footer.css";
+@import "blocks/button.css";
 
 /* To do… components become blocks, etc. */
 @import "components/forms.css";
-@import "components/buttons.css";
 @import "ghost/content.css";
 @import "ghost/readmore.css";
 @import "ghost/members.css";
