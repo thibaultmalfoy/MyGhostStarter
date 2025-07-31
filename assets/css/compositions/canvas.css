@@ -1,0 +1,9 @@
+.canvas {
+	display: grid;
+    grid-template-columns: 1fr 1fr min(var(--measure, 67ch), 100%) 1fr 1fr;
+}
+
+.canvas > * {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}

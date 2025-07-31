@@ -16,6 +16,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 @import "global/global.css";
 
 /* Compositions */
+@import "compositions/canvas.css";
 @import "compositions/cluster.css";
 @import "compositions/repel.css";
 @import "compositions/stack.css";
@@ -25,14 +26,15 @@ production stylesheet in assets/built/screen.css using: npm run dev
 @import "utilities/region.css";
 
 /* Blocks */
+@import "blocks/article.css";
+@import "blocks/button.css";
+@import "blocks/kg-content.css";
+@import "blocks/readmore.css";
 @import "blocks/site-header.css";
 @import "blocks/site-footer.css";
-@import "blocks/button.css";
 
 /* To do… components become blocks, etc. */
 @import "components/forms.css";
-@import "ghost/content.css";
-@import "ghost/readmore.css";
 @import "ghost/members.css";
 @import "ghost/errors.css";
 @import "ghost/badge.css";
@@ -44,28 +46,6 @@ production stylesheet in assets/built/screen.css using: npm run dev
 /* Main - Your styles here! Edit below
 /* ---------------------------------------------------------- */
 
-html,
-.gh-viewport {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: #ffffff;
-}
-
-.gh-main {
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.gh-article {
-    margin-block: var(--space-2xl);
-}
-
-.gh-content {
-    margin-block: var(--space-xl);
-}
-
 .gh-postfeed {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
@@ -75,12 +55,6 @@ html,
 
 .gh-postfeed > *:first-child {
     grid-column: 1 / -1;
-}
-
-.gh-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 
@@ -139,42 +113,6 @@ html,
     opacity: 0.75;
 }
 
-
-/* Post
-/* ---------------------------------------------------------- */
-
-.gh-header {
-    text-align: center;
-}
-
-.gh-post-meta {
-    display: block;
-    font-size: var(--type--2);
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    opacity: 0.8;
-}
-
-.gh-title {
-    margin-block-start: var(--space-3xs);
-}
-
-.gh-excerpt {
-    font-size: var(--type-0);
-    margin-block-start: var(--space-xs);
-    margin-block-end: var(--space-m);
-    text-wrap: balance;
-}
-
-.gh-feature-image {
-    grid-column: wide-start / wide-end;
-    width: 100%;
-}
-
-.gh-feature-image img {
-    margin-inline: auto;
-    width: 100%;
-}
 
 /* Author Archive
 /* ---------------------------------------------------------- */

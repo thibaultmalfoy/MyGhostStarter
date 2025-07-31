@@ -39,6 +39,8 @@
     --leading-standard: 1.4;
     --leading-loose: 1.7;
 
+    --measure: 60ch;
+
     --gutter: var(--space-m);
     --uppercase-kerning: 0.04ch;
 

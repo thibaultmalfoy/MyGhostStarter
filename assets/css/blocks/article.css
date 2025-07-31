@@ -1,0 +1,32 @@
+.article {
+	--region-space: var(--space-3xl);
+}
+
+.article-header {
+	text-align: center;
+}
+
+.article-meta {
+	font-size: var(--type--2);
+    letter-spacing: var(--uppercase-kerning);
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.article-title {
+	margin-block-start: var(--space-3xs);
+}
+
+.article-excerpt {
+	font-size: var(--type-0);
+	margin-block-start: var(--space-m);
+	text-wrap: balance;
+}
+
+.article-feature-image {
+	margin-block-start: var(--space-xl);
+}
+
+.article-body {
+	margin-block: var(--space-xl);
+}

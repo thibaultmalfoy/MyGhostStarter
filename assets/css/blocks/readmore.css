@@ -1,0 +1,7 @@
+.readmore a:not(:hover) {
+	text-decoration: none;
+}
+
+.readmore-next {
+	justify-self: end;
+}
