@@ -1,5 +1,4 @@
-.kg-width-wide,
-.kg-content-wide > div {
+.kg-width-wide {
     grid-column-start: 2;
     grid-column-end: 5;
 }
