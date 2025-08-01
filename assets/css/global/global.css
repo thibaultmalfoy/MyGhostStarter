@@ -10,13 +10,21 @@ body {
     --font-body: var(--font-serif);
     --font-heading: var(--font-sans-serif);
 
+    background: var(--color-bg);
+    color: var(--color-text);
+
     font-family: var(--font-body);
     font-size: var(--type-0);
+    font-size-adjust: from-font;
+    font-variant-numeric: oldstyle-nums;
+    line-height: var(--leading-standard);
     margin: 0;
 }
 
 :is(h1, h2, h3, h4, h4, h5, h6) {
     font-family: var(--font-heading);
+    line-height: var(--leading-fine);
+    text-wrap: balance;
 }
 
 h1 {
@@ -31,8 +39,163 @@ h3 {
     font-size: var(--type-1);
 }
 
-h4 {
-    font-size: var(--type-0);
+:is(h4, h5, h6) {
+  font-size: var(--type-0);
+}
+
+small {
+    font-size: var(--type--1);
+}
+
+del, ins {
+  text-decoration: none;
+  padding-inline: 0.3em;
+}
+
+
+del {
+    background: var(--color-error);
+
+}
+
+ins {
+    background: var(--color-success);
+}
+
+del, ins, del::before, ins::before {
+    font-family: var(--font-mono);
+}
+
+del::before {
+    content: "- ";
+}
+
+ins::before {
+    content: "+ ";
+}
+
+:is(code, kbd, samp) {
+  font-family: var(--font-mono);
+  padding: 0.2em 0.2em 0.05em 0.2em;
+  hyphens: none;
+  tab-size: 2;
+  text-align: left;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  box-decoration-break: clone;
+}
+
+/* This is quite a new property, so we want code styles to at least, not be huge or tiny */
+@supports not (font-size-adjust: from-font) {
+  :is(code, kbd, samp) {
+    font-size: 0.8em;
+  }
+}
+
+pre:has(code) {
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+pre code {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+kbd {
+  border: 1px solid;
+  padding-block-end: 0.1em;
+}
+
+var {
+  font-style: normal;
+  font-weight: var(--font-medium);
+}
+
+q {
+  font-style: italic;
+}
+
+:is(ol, ul):not([class]) {
+    padding-inline-start: var(--space-m);
+}
+
+:is(ol, ul):not([class]) li + * {
+  margin-block-start: var(--space-2xs);
+}
+
+:is(ol, ul) ::marker {
+    color: var(--color-slate-600);
+}
+
+ul ::marker {
+  font-size: 0.8lh;
+}
+
+ol ::marker {
+  font-size: 1em;
+  font-variant-numeric: tabular-nums;
+  font-weight: var(--font-bold);
+}
+
+/* Lists with classes and roles will be out of standard flow, so remove the default spacing */
+[role='list'][class],
+[role='tablist'][class] {
+  margin-block: 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: var(--font-medium);
+}
+
+dt + dd {
+  margin-block-start: var(--space-xs);
+}
+
+dd + dt {
+  margin-block-start: var(--space-s);
+}
+
+dd {
+  margin-inline-start: 1.5ch;
+}
+
+blockquote {
+    border-left: var(--stroke-width) solid var(--color-border);
+    padding-inline-start: calc(var(--space-m) - var(--stroke-width));
+}
+
+blockquote footer {
+  margin-block-start: var(--space-2xs);
+}
+
+blockquote q {
+  font-style: normal;
+}
+
+blockquote q::before, blockquote q::after {
+    content: "";
+}
+
+hr {
+  border-top: var(--stroke-width) solid var(--color-border);
+}
+
+:is(video, iframe[src*='youtube'], iframe[src*='vimeo']) {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%; 
 }
 
 figcaption {
@@ -43,9 +206,3 @@ figcaption {
     text-wrap: balance;
 }
 
-:is(video, iframe[src*='youtube'], iframe[src*='vimeo']) {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
-}
