@@ -42,3 +42,10 @@ figcaption {
     text-align: center;
     text-wrap: balance;
 }
+
+:is(video, iframe[src*='youtube'], iframe[src*='vimeo']) {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}

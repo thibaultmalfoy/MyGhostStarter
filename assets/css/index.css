@@ -28,6 +28,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 /* Blocks */
 @import "blocks/article.css";
 @import "blocks/button.css";
+@import "blocks/cards.css";
 @import "blocks/kg-content.css";
 @import "blocks/readmore.css";
 @import "blocks/site-header.css";
