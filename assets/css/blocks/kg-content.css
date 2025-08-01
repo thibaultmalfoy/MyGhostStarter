@@ -14,23 +14,7 @@
     width: 100%;
 }
 
-/* Card captions */
-
-:is(.kg-width-wide, .kg-width-full).kg-card-hascaption {
-    display: grid;
-    grid-template-columns: inherit;
-}
-
-.kg-width-wide.kg-card-hascaption img {
-    grid-column-start: 2;
-    grid-column-end: 5;
-}
-.kg-width-full.kg-card-hascaption img {
-    grid-column-start: 1;
-    grid-column-end: 6;
-}
-
-:is(.kg-width-wide, .kg-width-full).kg-card-hascaption figcaption {
-    grid-column-start: 3;
-    grid-column-end: 4;
+.kg-card-hascaption figcaption {
+    max-inline-size: var(--measure, 67ch);
+    margin-inline: auto;
 }
