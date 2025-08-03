@@ -45,6 +45,7 @@
 
     --gutter: var(--space-m);
     --stroke-width: 2px;
+    --stroke: var(--stroke-width) solid var(--color-border);
     --uppercase-kerning: 0.04ch;
 
     /* Fluid type scale thanks to Utopia: https://utopia.fyi/type/calculator?c=320,18,1.2,1280,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
